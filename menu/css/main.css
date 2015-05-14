@@ -1,0 +1,98 @@
+body{
+    background-color: #0b222f;
+}
+.nav_menu{
+    font-size: 16px;
+    font: bold, Calibri, serif;
+    height: 45px;
+    text-transform: uppercase;
+}
+.menu{
+    text-align: center;
+}
+.menu li{
+    width: 20%;
+    text-align: center;
+    float: left;
+    padding-top: 15px;
+    list-style: none;
+}
+.menu li a{
+    color: #ffb32f;
+    text-decoration: none;
+
+}
+.menu li a:hover{
+    color: #3cff8a;
+}
+.mob_menu{
+    display: none;
+}
+.mobile_menu li:hover{
+    background-color: #83adff;
+    transition: .3s ease-in-out;
+}
+
+
+
+.menu_input {
+    display: none;
+}
+.menu_input + label {
+    background-color: #ffb32f;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font: bold, Calibri, serif;
+    padding: 5px;
+    text-align: center;
+}
+.menu_input:not(checked) ~ .switch_content {
+    display: none;
+}
+.menu_input:checked ~ .switch_content {
+    display: block;
+}
+.menu_input + label .switch_less, .menu_input:checked + label .switch_more  {
+    display: none;
+}
+.menu_input:checked + label .switch_less {
+    display: inline-block;
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .menu{
+        display: none;
+    }
+    .mob_menu{
+        display: block;
+        text-transform: uppercase;
+    }
+    .mobile_menu{
+        display: block;
+    }
+    .mobile_menu li{
+        list-style: none;
+        text-align: center;
+        font-size: 16px;
+        font: bold, Calibri, serif;
+        border: 1px solid #ffffff;
+        margin-bottom: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .mobile_menu a{
+        text-decoration: none;
+        color: #3cff8a;
+    }
+    .mobile_menu a:hover{
+        color: #ffb32f
+    }
+}
